@@ -1,0 +1,203 @@
+// Sub theme styling.
+@import 'variables_theme';
+
+// Bootstrap overriden variables.
+// @see https://getbootstrap.com/docs/4.6/getting-started/theming/#variable-defaults.
+@import 'variables_bootstrap';
+
+// Include bootstrap.
+@import '../../../themes/bootstrap4/scss/style';
+
+
+body {
+    background-image: url("../image/bg1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+
+    .page-wrapper {
+        background-color: #fff;
+        margin-top: 10px;
+        &.container {
+            padding: 0;
+        }
+
+        .region-nav-branding {
+            background-image: url("../image/top1repeat.jpg"); 
+            background-repeat: repeat-x;
+            height: 90px;
+
+            .navbar-brand  {
+                position: relative;
+                >a {
+                    position: absolute;
+                    top: 5px;
+                    left: 18px;
+                    z-index: 6;
+                    
+                    img {
+                        height: 161px;
+                        margin-right: 0px;
+                    }
+                }
+
+                .site-title {
+                    position: absolute;
+                    top: 91px;
+                    left: 198px;
+                    font-size: 16px;
+                    z-index: 7;
+                   font-style: italic;
+                   font-weight: normal;
+                    
+
+                }
+            }
+        }
+
+        .region-nav-main {
+            .navbar-nav {
+                margin-top: 26px;
+                li {
+                    a {
+                        display: inline-block; 
+                        border: 1px solid #333;
+                        border-radius: 8px;
+                        margin: 0 6px;
+                        background-image: url("../image/nav.png");
+                        background-position: top;
+                        height: 38px;
+                        color: #fff;
+                        padding-left: 12px;
+                        padding-right: 12px;
+                        line-height: 18px;
+                        font-weight: 600;
+
+                        &:hover {
+                            background-position: bottom;
+                            color: #eee;
+                        }
+                    }
+                }
+            }
+        }
+
+        .main-menu {
+            
+            background-color: #336688;
+            background-image: url("../image/top2.jpg");
+            background-repeat: repeat-x;
+            border-top: 1px solid #aaa;
+            background-size: inherit;
+            height: 90px;
+        }
+        .region-nav-main {
+            .navbar-nav {
+                li {
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        .region-breadcrumb {
+            
+        }
+
+        .region-content {
+            padding: 0;
+
+            
+                img {
+                    max-width: 100%;
+                }
+
+                .page-title {
+                    color: #336688;
+                    font-family: Arial, Helvetica, Sans-serif;
+                    font-weight: bold;
+                    font-size: 2em;
+                    font-style: normal;
+                    border-top: 2px solid #336688;
+                    border-bottom: 2px solid #336688;
+                    border-left: 2px solid #336688;
+                    border-right: 2px solid #336688;
+                    display: block;
+                    padding: 6px;
+                    background-color: #eee;
+                    text-indent: 1px;
+                    position: relative;
+                    margin-top: 0px;
+                    margin-bottom: 0px;
+                    margin-right: 0px;
+                    clear: both;
+                    text-align: left!important;
+                    background: #eeeeee;
+                    background: -moz-linear-gradient(top, #eeeeee 1%, #bbbbbb 100%);
+                    background: -webkit-linear-gradient(top, #eeeeee 1%,#bbbbbb 100%);
+                    background: linear-gradient(to bottom, #eeeeee 1%,#bbbbbb 100%);
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#bbbbbb',GradientType=0 );
+
+                    span {
+                        text-align: left;
+                    }
+                }
+            
+
+        }
+
+        .region-sidebar-first {
+            padding-top: 1em;
+            >div {
+                background: #eee;
+                padding: 0.5em;
+                border-radius: 8px;
+            }
+        }
+
+        .sidebar {
+            background: #1e5799;
+            background: -moz-linear-gradient(left, #1e5799 0%, #2989d8 50%, #7db9e8 100%);
+            background: -webkit-gradient(linear, left top, right top, color-stop(0%,#1e5799), color-stop(50%,#2989d8), color-stop(100%,#7db9e8));
+            background: -webkit-linear-gradient(left, #1e5799 0%,#2989d8 50%,#7db9e8 100%);
+            background: -o-linear-gradient(left, #1e5799 0%,#2989d8 50%,#7db9e8 100%);
+            background: -ms-linear-gradient(left, #1e5799 0%,#2989d8 50%,#7db9e8 100%);
+            background: linear-gradient(to right, #1e5799 0%,#2989d8 50%,#7db9e8 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 );
+            
+
+            border-right: 1px solid #333;
+            box-shadow: 1px 0px 10px 0px #333;
+            .region-sidebar-first {
+                
+            }
+        }
+
+        .main-footer {
+            background-image: url("../image/footer.jpg");
+            background-size: contain;
+            background-repeat: repeat-x;
+            padding: 0.5em 0;
+
+
+            .region-footer {
+                .navbar-nav {
+                    display: flex;
+                    flex-direction: row;
+                    li {
+                        flex: 1 auto;
+
+                        a {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    
+}

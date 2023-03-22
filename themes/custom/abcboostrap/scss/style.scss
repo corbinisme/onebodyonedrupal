@@ -1,0 +1,107 @@
+// Sub theme styling.
+@import 'variables_theme';
+
+// Bootstrap overriden variables.
+// @see https://getbootstrap.com/docs/4.6/getting-started/theming/#variable-defaults.
+@import 'variables_bootstrap';
+
+// Include bootstrap.
+@import '../../../themes/bootstrap4/scss/style';
+
+
+body {
+    background-image: url("../image/bg1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+
+    .page-wrapper {
+        background-color: #fff;
+        margin-top: 50px;
+        &.container {
+            padding: 0;
+        }
+
+        .region-nav-branding {
+            background-image: url("../image/top1repeat.jpg"); 
+            background-repeat: repeat-x;
+        }
+
+        .main-menu {
+            
+            background-color: #336688;
+            background-image: url("../image/top2.jpg");
+            background-repeat: repeat-x;
+            border-top: 1px solid #aaa;
+            background-size: contain;
+        }
+        .region-nav-main {
+            .navbar-nav {
+                li {
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        .region-breadcrumb {
+            
+        }
+
+        .region-content {
+            padding: 0;
+
+            
+                img {
+                    max-width: 100%;
+                }
+            
+
+        }
+
+        .sidebar {
+            background: #1e5799;
+            background: -moz-linear-gradient(left, #1e5799 0%, #2989d8 50%, #7db9e8 100%);
+            background: -webkit-gradient(linear, left top, right top, color-stop(0%,#1e5799), color-stop(50%,#2989d8), color-stop(100%,#7db9e8));
+            background: -webkit-linear-gradient(left, #1e5799 0%,#2989d8 50%,#7db9e8 100%);
+            background: -o-linear-gradient(left, #1e5799 0%,#2989d8 50%,#7db9e8 100%);
+            background: -ms-linear-gradient(left, #1e5799 0%,#2989d8 50%,#7db9e8 100%);
+            background: linear-gradient(to right, #1e5799 0%,#2989d8 50%,#7db9e8 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 );
+            
+
+            border-right: 1px solid #333;
+            box-shadow: 1px 0px 10px 0px #333;
+            .region-sidebar-first {
+                
+            }
+        }
+
+        .main-footer {
+            background-image: url("../image/footer.jpg");
+            background-size: contain;
+            background-repeat: repeat-x;
+            padding: 0.5em 0;
+
+
+            .region-footer {
+                .navbar-nav {
+                    display: flex;
+                    flex-direction: row;
+                    li {
+                        flex: 1 auto;
+
+                        a {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    
+}
